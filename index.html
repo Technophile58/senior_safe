@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Safe Online Bank</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: #e9f5ff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        /* Quick Actions Section */
+        #quick-actions {
+            padding: 30px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        #quick-actions h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .actions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .action-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .action-item img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        .action-item h3 {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .action-item p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .action-item button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .action-item button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007bff;
+            color: #fff;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            padding: 40px 20px;
+            background: #f4f4f9;
+        }
+
+        #testimonials h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .testimonial p {
+            font-size: 1rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial span {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .actions-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .action-item img {
+                width: 60px;
+                margin-bottom: 10px;
+            }
+
+            .action-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .action-item p {
+                font-size: 0.9rem;
+            }
+
+            .action-item button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">SeniorSafe</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Banking Made Simple, Secure, and Stress-Free</h1>
+        <p>Your trusted partner in online banking tailored for your needs.</p>
+    </section>
+
+    <!-- Quick Actions Section -->
+    <section id="quick-actions">
+        <h2>Quick Actions</h2>
+        <div class="actions-grid">
+            <div class="action-item">
+                <img src="https://img.icons8.com/fluency/96/null/bank-building.png" alt="View Balance">
+                <h3>View Balance</h3>
+                <p>Check your account balance instantly.</p>
+                <button>View Balance</button>
+            </div>
+            <div class="action-item">
+                <img src="https://img.icons8.com/fluency/96/null/money-transfer.png" alt="Transfer Money">
+                <h3>Transfer Money</h3>
+                <p>Send money securely to anyone.</p>
+                <button>Transfer Money</button>
+            </div>
+            <div class="action-item">
+                <img src="https://img.icons8.com/fluency/96/null/bill.png" alt="Pay Bills">
+                <h3>Pay Bills</h3>
+                <p>Pay your bills quickly and easily.</p>
+                <button>Pay Bills</button>
+            </div>
+            <div class="action-item">
+                <img src="https://img.icons8.com/color/96/null/face-id.png" alt="Face Recognition Login">
+                <h3>Face Recognition</h3>
+                <p>Login securely with your face.</p>
+                <button>Enable Now</button>
+            </div>
+            <div class="action-item">
+                <img src="https://img.icons8.com/color/96/null/fingerprint.png" alt="Fingerprint Login">
+                <h3>Fingerprint Login</h3>
+                <p>Use your fingerprint for secure login.</p>
+                <button>Enable Now</button>
+            </div>
+            <div class="action-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/9964/9964360.png" alt="Transaction Summary">
+                <h3>Transaction Summary</h3>
+                <p>View detailed reports of your transactions.</p>
+                <button>View Summary</button>
+            </div>
+            <div class="action-item">
+                <img src="https://img.icons8.com/fluency/96/null/customer-support.png" alt="Customer Support">
+                <h3>Customer Support</h3>
+                <p>Get assistance for any banking issue.</p>
+                <button>Contact Support</button>
+            </div>
+            <div class="action-item">
+                <img src="./voice-command.png" alt="Voice Assistance">
+                <h3>Voice Assistance</h3>
+                <p>Navigate the app with simple voice commands.</p>
+                <button>Enable Voice</button>
+            </div>
+            <div class="action-item">
+                <img src="https://img.icons8.com/color/96/null/language.png" alt="Language Support">
+                <h3>Language Options</h3>
+                <p>Access the app in your preferred regional language.</p>
+                <button>Change Language</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Senior Safe Online Bank. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Elements
+            const buttons = document.querySelectorAll(".action-item button");
+            const languageOptions = document.querySelector("#quick-actions .action-item:nth-child(9)");
+            
+            // Language options
+            let currentLanguage = "English";
+    
+            const translations = {
+                English: {
+                    "View Balance": "Your current balance is $5,000.",
+                    "Transfer Money": "Transferred successfully!",
+                    "Pay Bills": "Bills paid successfully!",
+                    "Face Recognition": "Face recognition enabled.",
+                    "Fingerprint Login": "Fingerprint login enabled.",
+                    "Transaction Summary": "Redirecting to transaction summary...",
+                    "Customer Support": "Connecting to customer support...",
+                    "Voice Assistance": "Please say your command clearly.",
+                },
+                Hindi: {
+                    "View Balance": "आपका वर्तमान शेष $5,000 है।",
+                    "Transfer Money": "सफलतापूर्वक स्थानांतरित!",
+                    "Pay Bills": "बिल सफलतापूर्वक भुगतान किए गए।",
+                    "Face Recognition": "चेहरा पहचान सक्षम।",
+                    "Fingerprint Login": "फिंगरप्रिंट लॉगिन सक्षम।",
+                    "Transaction Summary": "लेन-देन सारांश पर जा रहे हैं।",
+                    "Customer Support": "ग्राहक सहायता से संपर्क कर रहे हैं।",
+                    "Voice Assistance": "कृपया अपना आदेश स्पष्ट रूप से कहें।",
+                },
+            };
+    
+            // Assign actions to each button
+            buttons.forEach((button) => {
+                button.addEventListener("click", (event) => {
+                    const action = event.target.parentElement.querySelector("h3").innerText;
+    
+                    switch (action) {
+                        case "View Balance":
+                            showModal("Account Balance", translations[currentLanguage]["View Balance"]);
+                            break;
+                        case "Transfer Money":
+                            const recipient = prompt("Enter the recipient's name:");
+                            const amount = prompt("Enter the amount to transfer:");
+                            if (recipient && amount) {
+                                showModal(
+                                    "Transfer Success",
+                                    `Transferred $${amount} to ${recipient}. ${translations[currentLanguage]["Transfer Money"]}`
+                                );
+                            }
+                            break;
+                        case "Pay Bills":
+                            showModal("Bill Payment", translations[currentLanguage]["Pay Bills"]);
+                            break;
+                        case "Face Recognition":
+                            showModal("Face Recognition", translations[currentLanguage]["Face Recognition"]);
+                            break;
+                        case "Fingerprint Login":
+                            showModal("Fingerprint Login", translations[currentLanguage]["Fingerprint Login"]);
+                            break;
+                        case "Transaction Summary":
+                            showModal("Transaction Summary", translations[currentLanguage]["Transaction Summary"]);
+                            break;
+                        case "Customer Support":
+                            showModal("Customer Support", translations[currentLanguage]["Customer Support"]);
+                            break;
+                    }
+                });
+            });
+    
+            // Language Toggle
+            languageOptions.addEventListener("click", () => {
+                currentLanguage = currentLanguage === "English" ? "Hindi" : "English";
+                alert(`Language changed to ${currentLanguage}.`);
+            });
+    
+            // Modal logic
+            const modal = document.createElement("div");
+            modal.style.position = "fixed";
+            modal.style.top = "50%";
+            modal.style.left = "50%";
+            modal.style.transform = "translate(-50%, -50%)";
+            modal.style.padding = "20px";
+            modal.style.background = "#fff";
+            modal.style.border = "1px solid #ddd";
+            modal.style.boxShadow = "0px 4px 8px rgba(0, 0, 0, 0.2)";
+            modal.style.zIndex = "1000";
+            modal.style.display = "none";
+    
+            const modalTitle = document.createElement("h3");
+            modalTitle.style.color = "#007bff";
+            const modalContent = document.createElement("p");
+            const closeModalBtn = document.createElement("button");
+            closeModalBtn.innerText = "Close";
+            closeModalBtn.style.marginTop = "10px";
+            closeModalBtn.style.padding = "10px 20px";
+            closeModalBtn.style.background = "#007bff";
+            closeModalBtn.style.color = "#fff";
+            closeModalBtn.style.border = "none";
+            closeModalBtn.style.cursor = "pointer";
+    
+            closeModalBtn.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+    
+            modal.appendChild(modalTitle);
+            modal.appendChild(modalContent);
+            modal.appendChild(closeModalBtn);
+            document.body.appendChild(modal);
+    
+            function showModal(title, content) {
+                modalTitle.innerText = title;
+                modalContent.innerText = content;
+                modal.style.display = "block";
+            }
+    
+            // Voice Assistance (Simplified)
+            const voiceButton = document.querySelector("#quick-actions .action-item:nth-child(8)");
+            voiceButton.addEventListener("click", () => {
+                const command = prompt("Say your command (e.g., 'view balance').");
+                if (command.toLowerCase().includes("balance")) {
+                    showModal("Voice Command", translations[currentLanguage]["View Balance"]);
+                } else if (command.toLowerCase().includes("transfer")) {
+                    showModal("Voice Command", "Transfer action initiated.");
+                } else {
+                    showModal("Voice Command", translations[currentLanguage]["Voice Assistance"]);
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
